@@ -1,0 +1,12 @@
+global:
+  resolve_timeout: 1m
+  slack_api_url: 'https://hooks.slack.com/services/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'
+
+route:
+  receiver: 'slack'
+
+receivers:
+- name: 'slack'
+  slack_configs:
+  - channel: '#prometheus'
+    send_resolved: true
